@@ -4,12 +4,25 @@
     <title>Writer</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="N.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <body style="background-color:antiquewhite;">
+    <body style="background-color:cornsilk">
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#myDiv">Writing Sample</a></li>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="mailto:reena.narinesingh@gmail.com">Email</a></li>
+          <li><a href="#bottom">Socials</a>
+        </ul>
+      </nav>
+
+      
         <img src="logo.png" alt="This image cannot be displayed." width="150" class="image-center rounded-img"
         height="150"/>
-        <h1 class="name">Kareena NS</h1>
+        <div class="name">Kareena NS</div>
     <div class="popup" onclick="myFunction()">Click Me!
         <span class="popuptext" id="myPopup">Kareena NS is an aspiring author. Scroll to learn more.</span>
       </div>
@@ -20,14 +33,6 @@
           popup.classList.toggle("show");
         }
         </script>
-
-    <div class="navigate">
-        <a href="#aboutme">About Me</a>
-        <a href="#writingsample">Writing Sample</a>
-        <a href="index.html">Main Page</a>
-        <a href="mailto:reena.narinesingh@gmail.com">Email</a>
-      </div>
-
     <img src="books.jpg" alt="This image cannot be displayed." width=100%>
     <div id ="aboutme">
         <h2 class="abme">About Me</h2>
@@ -44,7 +49,32 @@
     </div>
     <p class="ahhh">reena.narinesingh@gmail.com</p>
     <img src="quote.png" alt="This image cannot be displayed." width=100%>
-    <div id ="writingsample">
+    <div id="container2">
+      <div id="content">
+      <script>
+            const scrollToBottom = () => {
+                const div = document.getElementById("myDiv");
+                div.scrollTo({
+                    top: div.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+            const scrollToTop = () => {
+                const div = document.getElementById("myDiv");
+                div.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            window.onload = function() {
+              const container2 = document.getElementById('container2');
+              const myDiv = document.getElementById('myDiv');
+              myDiv.scrollLeft = (container2.innerWidth - window.innerWidth) / 2;
+            };
+        </script>
+      </div>
+    </div>
+    <div id ="myDiv">
         <h2 class="abme">Writing Sample</h2>
         <p class = "chapter">How to… Be Rejected 30 Times</p>
         <p class = "chap">
@@ -95,13 +125,15 @@
             <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana gave a tight-lipped smile and nodded as they set off toward the car.
             </p>
     </div>
-    <hr class="custom-line">
-    <h2 class="abme">Socials</h2>
-    <div class="bottom">
-      <a href="https://www.wattpad.com/user/KareenaNS">Wattpad</a>
-      <a href="https://www.tiktok.com/@kareenans">TikTok</a>
-      <a href="https://www.instagram.com/kareena_ns/">Instagram</a>
-      <a href="https://www.youtube.com/channel/UCMOfdKrU09RVMIxLZHmgVnQ">YouTube</a>
+    <div id="bottom">
+      <h2 class="abme">Socials</h2>
+      <div class="linksBottom">
+        <a href="https://www.wattpad.com/user/KareenaNS">Wattpad</a>
+        <a href="https://www.tiktok.com/@kareenans">TikTok</a>
+        <a href="https://www.instagram.com/kareena_ns/">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCMOfdKrU09RVMIxLZHmgVnQ">YouTube</a>
+      </div>
+      <hr class="custom-line">
     </div>
   </body>
 </html>

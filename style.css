@@ -20,85 +20,106 @@ padding-top: 20px;
 
 
   /* Code for the main page.*/
-  .description {
-    font-family: "Courier New", Courier, monospace;
-    font-size: medium;
-    color: rosybrown;
-    text-align: center;
-  }
-  .bio {
-    text-align: center;
-    color: rosybrown;
-    font-family: "Courier New", Courier, monospace;
-    background-color: black;
-  }
-  .headers {
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    text-align: center;
-    font-size: xx-large;
-    color: rosybrown;
-    background-color: black;
-    background: black;
-    padding: 14px 20px;
-  }
   .navbar {
-    overflow: hidden;
-    background-color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+      position: fixed;
+      transform: translateY(-100%);
+      transition: transform 0.2s;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background: white;
+      list-style: none;
+      padding-top: 4rem;
+  }
+  .navbar li {
+    display:inline;
   }
   .navbar a {
-    float: left;
-    display: block;
-    margin-left: 190px;
-    margin-right: 200px;
-    color: rosybrown;
+    display: inline;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: gray;
     text-align: center;
     padding: 14px 0px;
     text-decoration: none;
     font-family: "Courier New", Courier, monospace;
   }
   .navbar a:hover {
-    background-color: rosybrown;
-    color: black;
+    background-color: gainsboro;
+    color: white;
+  }
+  .description {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+    color: white;
+    text-align: center;
+  }
+  .bio {
+    text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .headers {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    padding: 14px 20px;
+  }
+  .showMenu {
+    transform: translateY(0);
   }
 
 
   /* The code for author page.*/
-  .navigate {
-    overflow: hidden;
-    background-color:antiquewhite;
-    outline: auto;
-  }
-  .navigate a {
-    margin-left: 10%;
-    margin-right: 5%;
+  .menu {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    float: left;
-    color: black;
-    text-align: center;
+    width: 100%;
+    color: white;
     text-decoration: none;
-    padding: 14px 20px;
-    display: block;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    background: white;
 
   }
+  .menu a {
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    text-decoration: none;
+    padding: 30px; /* Adjust this value to add spacing between links */
+    padding-bottom: auto;
+  }
+  .menu li {
+    margin-bottom: 20%; 
+    display:inline;
+  }
   .navigate a:hover {
-    background-color: black;
-    color: antiquewhite;
+    background-color: rosybrown;
+    color: white;
   }
   .bottom {
     overflow: hidden;
-    background-color: antiquewhite;
+    background-color: white;
   }
-  .bottom a {
+  .linksBottom a {
     display: block;
-    color: black;
+    color: rosybrown;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   .name {
-    color: black;
+    color:rosybrown;
     font-style: normal;
     font-family: fantasy;
     font-stretch: wider;
@@ -112,7 +133,7 @@ padding-top: 20px;
     text-align: center;
     font-family: fantasy;
     letter-spacing: 1px;
-    color: black;
+    color:rosybrown;
     padding-top: 60px;
     text-decoration: overline;
   }
@@ -152,6 +173,45 @@ padding-top: 20px;
     background-color: black;
     margin: 10px 0;
   }
+  #myDiv {
+    height: 500px;
+    max-width: 800px; /* Adjust this width as needed */
+    overflow-y: scroll;
+    background: white;
+    padding: 0 20px; /* Adjust horizontal padding as needed */
+
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #container2 { /*this holds the scrollable element for the writing sample */
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    border: none; /* Optional: Add border for visibility */
+    align-items: center;
+    padding-top: 50px;
+  }
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+  .closeIcon {
+    display: none;
+  }
+  #content {
+    width: 100%; 
+  }
   /* Tryna do a popup for about me*/
   .popup {
     position: relative;
@@ -162,7 +222,12 @@ padding-top: 20px;
     -ms-user-select: none;
     user-select: none;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding: auto;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: rosybrown;
   }
   .popup .popuptext {
     visibility: hidden;
