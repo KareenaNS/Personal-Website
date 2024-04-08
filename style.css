@@ -106,16 +106,14 @@ padding-top: 20px;
     color: white;
   }
   .bottom {
-    overflow: hidden;
     background-color: white;
   }
   .linksBottom a {
-    display: block;
+    display: inline;
     color: darkslateblue;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
   }
   .name {
     color:aliceblue;
@@ -150,10 +148,18 @@ padding-top: 20px;
     text-align: center;
     padding-bottom: 10%;
     font-style: italic;
+    text-decoration: none;
   }
   .rounded-img {
     border-radius: 100%;
   }
+  #projects {
+    display: grid;
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 10px; /* Adjust the gap between images as needed */
+}
   .logoimage {
     margin-left: auto;
     margin-right: auto;
@@ -223,7 +229,7 @@ padding-top: 20px;
   }
   /* Tryna do a popup for about me*/
   .popup {
-    position: relative;
+    position:relative;
     display: block;
     cursor: pointer;
     -webkit-user-select: none;
@@ -234,15 +240,22 @@ padding-top: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding: auto;
-    color: aliceblue;
+    color: #f0f8ff;
     border-radius: 5px;
-    background-color: darkslateblue;
+    background-color: #483d8b;
   }
   .imageclick {
     text-align: center;
     font-size:x-small;
     color: darkslateblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .smslogos {
+    text-align: center;
+    height:50px;
+    width:50px;
+    margin:10px;
+    display: inline-block;
   }
   .popup .popuptext {
     visibility: hidden;
@@ -254,14 +267,14 @@ padding-top: 20px;
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    bottom: 5%;
     left: 50%;
     margin-left: -125px;
   }
   .popup .popuptext::after {
     content: "";
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
