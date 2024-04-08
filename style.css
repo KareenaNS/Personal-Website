@@ -81,29 +81,28 @@ padding-top: 20px;
   .menu {
     font-family:Georgia, 'Times New Roman', Times, serif;
     width: 100%;
-    color: white;
     text-decoration: none;
     text-align: right;
     padding: 0;
     margin: 0;
     position: fixed;
-    background: white;
-
+    background: darkslateblue;
   }
   .menu a {
-    color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
     text-align: right;
     text-decoration: none;
-    padding: 30px; /* Adjust this value to add spacing between links */
+    padding: 25px; /* Adjust this value to add spacing between links */
     padding-bottom: auto;
   }
   .menu li {
     margin-bottom: 20%; 
     display:inline;
   }
-  .navigate a:hover {
-    background-color: rosybrown;
+  .menu a:hover {
+    background-color:coral;
     color: white;
   }
   .bottom {
@@ -112,28 +111,31 @@ padding-top: 20px;
   }
   .linksBottom a {
     display: block;
-    color: rosybrown;
+    color: darkslateblue;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .name {
-    color:rosybrown;
+    color:aliceblue;
+    float: left;
+    padding: 10px;
+    padding-left: 5%;
     font-style: normal;
     font-family: fantasy;
     font-stretch: wider;
     font-variant: small-caps;
-    padding-bottom: 50px;
     text-align: center;
     text-decoration: overline;
     letter-spacing: 2px;
+    font-size: xx-large;
   }
   .abme {
     text-align: center;
     font-family: fantasy;
     letter-spacing: 1px;
-    color:rosybrown;
+    color:darkslateblue;
     padding-top: 60px;
     text-decoration: overline;
   }
@@ -150,7 +152,14 @@ padding-top: 20px;
     font-style: italic;
   }
   .rounded-img {
-    border-radius: 50%;
+    border-radius: 100%;
+  }
+  .logoimage {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    width: 250px;
+    height: 250px;
   }
   .chapter {
     font-weight: bold;
@@ -170,7 +179,7 @@ padding-top: 20px;
   .custom-line {
     border: none;
     height: 2px;
-    background-color: black;
+    background-color: darkslateblue;
     margin: 10px 0;
   }
   #myDiv {
@@ -225,9 +234,15 @@ padding-top: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding: auto;
-    color: whitesmoke;
+    color: aliceblue;
     border-radius: 5px;
-    background-color: rosybrown;
+    background-color: darkslateblue;
+  }
+  .imageclick {
+    text-align: center;
+    font-size:x-small;
+    color: darkslateblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .popup .popuptext {
     visibility: hidden;
