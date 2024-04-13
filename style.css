@@ -414,6 +414,7 @@ padding-top: 20px;
   .socials {
     overflow: hidden;
     background-color: honeydew;
+    display: flex;
   }
   .socials a {
     display: block;
