@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>Kareena NS</title>
@@ -102,10 +102,136 @@
 
 
 
-    <img src="headshot.jpg" alt="This image cannot be displayed." class="rounded-img image-center"/>
+    <img src="headshot.jpeg" alt="This image cannot be displayed." class="rounded-img image-center"/>
     <p class="description">This is my headshot.</p>
     <p class="description">So professional.</p>
     <p class="description">Very cool for doing it myself.</p>
     <p class="description">Enjoy my face framed by an oval.</p>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Writer</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="N.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div class="body1">
+      
+      <nav class="navigation" style="position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%;">
+        <div class="maname">Kareena NS</div>
+        <ul>
+          <li><a href="student.html">Projects</a></li>
+          <li><a href="author.html">Writer</a></li>
+          <li><a href="content.html">Content Creator</a>
+          <li><a href="mailto:reena.narinesingh@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+
+      <img 
+      src="warning.png" 
+      alt="Logo" 
+      width="80%" 
+      style="
+        display: block; 
+        margin: 0 auto; 
+        margin-top: 10px; 
+        cursor: pointer; 
+      " 
+      onclick="scrollToAbout()" 
+      />
+
+      <div id="urmom">
+        <img src="headshot.jpeg" alt="Logo" width="300" height="300" style="display: block; margin: 0 auto; border-radius: 50%; margin-top: 100px;"> 
+      </div>
+      <div id="aboutme">
+        <h2 class="ab">About Me</h2>
+        <div id = "describe">
+          <p class="descr">My name is Kareena NS, and I am a Georgia Tech graduate working in the 
+            IT department at the City of Morrow. I tend to dabble in coding (as in, it's my entire career),
+            so check out some of my work down below!</p>
+        </div>
+      </div>
+
+      <script>
+        function scrollToAbout() {
+        const aboutSection = document.getElementById('urmom'); 
+        aboutSection.scrollIntoView({ behavior: 'smooth' }); 
+      }
+      </script>
+    <p class="ah">
+      <a href="mailto:reena.narinesingh@gmail.com">reena.narinesingh@gmail.com
+      </a>
+    </p>
+
+
+    <div class="contain"> 
+      <h2 class="ab">Projects</h2>
+      <div class="row">
+        <a href="https://kareenans.github.io/cc-vis/"> <div class="module">
+          <img src="cc-vis.png" alt="Global Climate Change"> 
+          <h3>Global Climate Change</h3>
+          <p>A portfolio of charts using Chart.js and d3 to outline the impact of climate change globally over time.</p>
+        </div>
+        </a>
+        <a href="https://kareenans.github.io/the-district/"> <div class="module">
+          <img src="the-district.png" alt="The District"> 
+          <h3>The District</h3>
+          <p>A frontend web application for the City of Morrow's outdoor event venue, The District.</p>
+        </div>
+        </a>
+        <a href="https://github.com/wShawGitHub/QualPat-JID-4119-"> <div class="module">
+          <img src="qualpat.png" alt="QualPat"> 
+          <h3>QualPat</h3>
+          <p>My final project for junior design. A sentiment analysis using Google's NLP that outputs visualizations.</p>
+        </div>
+        </a>
+      </div>
+  
+      <div class="row"> 
+        <a href="https://github.com/KareenaNS/Sanitation-Trash-Pickup"> <div class="module">
+          <img src="waste-wise.png" alt="waste-wise"> 
+          <h3>Waste Wise</h3>
+          <p>A web and mobile app to track trash pickup around Morrow.</p>
+        </div>
+        </a>
+        <a href="https://kareenans.github.io/Personal-Website/"> <div class="module">
+          <img src="personal-website.png" alt="personal-website"> 
+          <h3>Portfolio</h3>
+          <p>You're looking at it! This here website.</p>
+        </div>
+        </a>
+        <a href="https://github.com/KareenaNS"> <div class="module">
+          <img src="mystery.jpg" alt="mystery"> 
+          <h3>A Mystery</h3>
+          <p>...what will she work on next?</p>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <p class="ah">
+      .
+    </p>
+
+
+    <div id="footer"> <h2 class="maname">Socials</h2>
+      <div class="linksBottom">
+        <a href="https://www.instagram.com/reena_ns/">
+          <img src="1.png" alt="Instagram" class="smslogos"/> 
+        </a>
+        <a href="https://www.tiktok.com/@shethacoolie">
+          <img src="4.png" alt="TikTok" class="smslogos"/> 
+        </a>
+      </div>
+    </div>  
+  </div>
   </body>
 </html>
