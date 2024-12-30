@@ -7,6 +7,10 @@ img {
     font-family: 'neon'; /* Replace with the desired font name */
     src: url('../fonts/neon.ttf') format('truetype'); 
   }
+  @font-face {
+    font-family: 'Wonderbar';
+    src: url('fonts/Wonderbar.otf') format('opentype');
+  }
 html {
     scroll-behavior: smooth;
 }
@@ -23,61 +27,6 @@ padding-top: 20px;
     font-style: italic;
 }
   /* Code for the main page.*/
-  .navbar {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    text-decoration: none;
-      position: fixed;
-      transform: translateY(-100%);
-      transition: transform 0.2s;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 99;
-      background: white;
-      list-style: none;
-      padding-top: 4rem;
-  }
-  .navbar li {
-    display:inline;
-  }
-  .navbar a {
-    display: inline;
-    margin-left: 60px;
-    margin-right: 60px;
-    color: gray;
-    text-align: center;
-    padding: 14px 0px;
-    text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .navbar a:hover {
-    background-color: gainsboro;
-    color: white;
-  }
-  .description {
-    font-family: "Courier New", Courier, monospace;
-    font-size: medium;
-    color: white;
-    text-align: center;
-  }
-  .bio {
-    text-align: center;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .headers {
-    font-family: "Courier New", Courier, monospace;
-    font-weight: bold;
-    text-align: center;
-    font-size: xx-large;
-    color: white;
-    padding: 14px 20px;
-  }
-  .showMenu {
-    transform: translateY(0);
-  }
   .navigation {
     font-family:Georgia, 'Times New Roman', Times, serif;
     width: 100%;
@@ -88,6 +37,8 @@ padding-top: 20px;
     margin: 0;
     position: fixed;
     background: #D4ADCF;
+    z-index: 1; /* Ensure the navbar is above other content */
+
   }
   .navigation a {
     color:#1B175D;
@@ -120,10 +71,16 @@ padding-top: 20px;
     letter-spacing: 2px;
     font-size: x-large;
   }
-  body {
+
+  html.home {
     background-image: url('QHG.gif'); /* Replace with the actual path */
-    background-size: cover; /* Scale the GIF to cover the entire screen */
-    background-position: center center; /* Center the GIF */
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; /* Prevent the GIF from repeating */ 
+  }  html.content {
+    background-image: url('bg.gif'); /* Replace with the actual path */
+    background-size: cover; 
+    background-position: center center; 
     background-repeat: no-repeat; /* Prevent the GIF from repeating */ 
   }
   .center-logo {
@@ -182,10 +139,10 @@ padding-top: 20px;
     border-radius: 5px; 
     padding: 20px; 
     text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
     flex: 1; /* Equal width for each module */
     margin: 0 10px; /* Spacing between modules */
     height: 300px; /* Set a fixed height for all modules */ 
-
   }
 
   .module:hover {
@@ -266,7 +223,7 @@ padding-top: 20px;
   .linksBottom a {
     display: inline;
     color: darkslateblue;
-    padding: 14px 20px;
+    padding: 4px;
     text-decoration: none;
     align-items: center;
     margin-left: 12%;
@@ -556,49 +513,115 @@ padding-top: 20px;
 
 
   /*Code for the content creator page*/
-  .header {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: teal;
-    font-stretch: extra-expanded;
-    text-shadow: 2px 2px lightseagreen;
-    text-align: center;
+  #foot {
+    background-color: #ACD8AA;
+    color: white; /* White text color for the footer */
+    text-align: center; /* Center the content horizontally */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
   }
-  .words {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: teal;
-    font-stretch: extra-expanded;
-    text-align: center;
-  }
-  .socials {
-    overflow: hidden;
-    background-color: honeydew;
-    display: flex;
-  }
-  .socials a {
-    display: block;
-    color: teal;
-    text-align: center;
-    padding: 30px 0px;
+  .navbar {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: auto;
     text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    background: #ACD8AA;
+    z-index: 1; /* Ensure the navbar is above other content */
+
   }
-  .socials a:hover {
-    background-color: teal;
-    color: honeydew;
+  .navbar a {
+    color:#133E11;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    padding: 25px; /* Adjust this value to add spacing between links */
+    padding-bottom: auto;
   }
-  .center {
+  .navbar a:hover {
+    background-color:goldenrod;
+    color: white;
+  }
+  .navbar li {
+    margin-bottom: 20%; 
+    display:inline;
+  }
+  .names {
+    color: #133E11;
+    float: left;
+    padding: 10px;
+    padding-left: 5%;
+    font-style: normal;
+    font-family:Wonderbar;
+    font-stretch: wider;
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: overline;
+    letter-spacing: 2px;
+    font-size: x-large;
+  }
+  .body2 {
     display: flex;
     justify-content: center;
-}
-.conte {
-    display: block;
-    color: teal;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+  }
+  
+    .white-box {
+      width: 80%; /* Adjust width as needed */
+      height: auto; /* Adjust height as needed */
+      background-color: white;
+      border-radius: 50px;
+      display: flex; /* Enables Flexbox */
+      flex-direction: column; /* Stacks content vertically */
+      justify-content: center; /* Centers content vertically */
+      align-items: center; /* Centers content horizontally */
+      padding: 20px;    }
+
+  .white-box h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #133E11;
+    font-family: Wonderbar;
+    width: 75%;
+    letter-spacing: 2px;
     text-align: center;
-    text-decoration: none;
-    padding: 30px 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    word-spacing: 50px;
+    margin-left: auto; /* Ensures horizontal centering */
+    margin-right: auto;
+  }
+  .white-box h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #133E11;
+    width: 75%;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+
+  /* Styling for paragraphs */
+.white-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #555;
+  width: 75%;
+  
 }
+  .profile-image {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }

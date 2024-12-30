@@ -1,120 +1,7 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Kareena NS</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="N.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <body>
-      <script>
-        function randomHexColor() {
-          const minLightness = 50; // Adjust as needed (0 to 100)
-          const hue = Math.floor(Math.random() * 360); // Random hue (0 to 359)
-          const saturation = Math.floor(Math.random() * 100); // Random saturation (0 to 100)
-          const lightness = Math.floor(Math.random() * (100 - minLightness) + minLightness);
-          const hslToHex = (h, s, l) => {
-            l /= 100;
-            const a = s * Math.min(l, 1 - l) / 100;
-            const f = n => {
-              const k = (n + h / 30) % 12;
-              const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-              return Math.round(255 * color).toString(16).padStart(2, '0');   // convert to Hex and pad with 0
-            };
-            return `#${f(0)}${f(8)}${f(4)}`;
-          };
-
-          return hslToHex(hue, saturation, lightness);
-        }
-        function updateGradient(currentColor1, currentColor2) {
-          //needed color input to recurse
-          const randomColor1 = randomHexColor();
-          const randomColor2 = randomHexColor();
-          let steps = 100;
-          let step = 0;
-          function interpolateColor(color1, color2, step) {
-            const r1 = parseInt(color1.substring(1, 3), 16);
-            const g1 = parseInt(color1.substring(3, 5), 16);
-            const b1 = parseInt(color1.substring(5, 7), 16);
-            const r2 = parseInt(color2.substring(1, 3), 16);
-            const g2 = parseInt(color2.substring(3, 5), 16);
-            const b2 = parseInt(color2.substring(5, 7), 16);
-            const r = Math.round(r1 + (r2 - r1) * step / steps);
-            const g = Math.round(g1 + (g2 - g1) * step / steps);
-            const b = Math.round(b1 + (b2 - b1) * step / steps);
-            return '#' + (r < 16 ? '0' : '') + r.toString(16) +
-              (g < 16 ? '0' : '') + g.toString(16) +
-              (b < 16 ? '0' : '') + b.toString(16);
-          }
-          function updateBackground() {
-            document.body.style.background = `linear-gradient(45deg, ${interpolateColor(currentColor1, randomColor1, step)}, ${interpolateColor(currentColor2, randomColor2, step)})`;
-            step++;
-            if (step <= steps) {
-              setTimeout(updateBackground, 50); // Change the delay time as needed
-            } else {
-              updateGradient(randomColor1, randomColor2);
-            }
-          }
-          updateBackground();
-        }
-        updateGradient('#ff7300', '#eaeaea');
-    </script>
-
-    <h1 class="headers">Kareena NS</h1>
-    <p class="bio">Computer science student by day, jack-of-all-trades by night.</p>
-    <p class="bio">Professional funny woman, always.</p>
-    <ul class="navbar">
-      <li><a href="student.html">Student</a>
-      <li><a href="author.html">Writer</a>
-      <li><a href="content.html">Content Creator</a>
-    </ul>
-
-    <button class="hamburger">
-      <i class="menuIcon material-icons">menu</i>
-      <i class="closeIcon material-icons">close</i>
-    </button>
-    <script>
-      const menu = document.querySelector(".navbar");
-      const menuItems = document.querySelectorAll(".navbar a"); 
-      const hamburger= document.querySelector(".hamburger");
-      const closeIcon= document.querySelector(".closeIcon");
-      const menuIcon = document.querySelector(".menuIcon");
-
-      function toggleMenu() {
-        if (menu.classList.contains("showMenu")) {
-          menu.classList.remove("showMenu");
-          closeIcon.style.display = "none";
-          menuIcon.style.display = "block";
-        } else {
-          menu.classList.add("showMenu");
-          closeIcon.style.display = "block";
-          menuIcon.style.display = "none";
-        }
-      }
-      hamburger.addEventListener("click", toggleMenu);
-      menuItems.forEach(
-        function(menuItem) { 
-          menuItem.addEventListener("click", toggleMenu);
-        }
-      )
-    </script>
-
-
-
-
-    <img src="headshot.jpeg" alt="This image cannot be displayed." class="rounded-img image-center"/>
-    <p class="description">This is my headshot.</p>
-    <p class="description">So professional.</p>
-    <p class="description">Very cool for doing it myself.</p>
-    <p class="description">Enjoy my face framed by an oval.</p>
-  </body>
-</html> -->
-
-
 <!DOCTYPE html>
-<html>
+<html class="home">
   <head>
-    <title>Writer</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="N.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -128,7 +15,6 @@
       width: 100%;">
         <div class="maname">Kareena NS</div>
         <ul>
-          <li><a href="student.html">Projects</a></li>
           <li><a href="author.html">Writer</a></li>
           <li><a href="content.html">Content Creator</a>
           <li><a href="mailto:reena.narinesingh@gmail.com">Email</a></li>
@@ -167,8 +53,7 @@
       }
       </script>
     <p class="ah">
-      <a href="mailto:reena.narinesingh@gmail.com">reena.narinesingh@gmail.com
-      </a>
+      .
     </p>
 
 
@@ -224,8 +109,17 @@
 
     <div id="footer"> <h2 class="maname">Socials</h2>
       <div class="linksBottom">
+        <a href="https://github.com/KareenaNS">
+          <img src="github.png" alt="Github" class="smslogos"/> 
+        </a>
         <a href="https://www.instagram.com/reena_ns/">
           <img src="1.png" alt="Instagram" class="smslogos"/> 
+        </a>
+        <a href="https://www.facebook.com/share/1GzgQjkDGT/?mibextid=wwXIfr">
+          <img src="facebok.png" alt="Facebook" class="smslogos"/> 
+        </a>
+        <a href="https://www.youtube.com/@reena_ns">
+          <img src="3.png" alt="Youtube" class="smslogos"/> 
         </a>
         <a href="https://www.tiktok.com/@shethacoolie">
           <img src="4.png" alt="TikTok" class="smslogos"/> 
