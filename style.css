@@ -790,6 +790,7 @@ body.photography-page .scrollable-gallery img {
   transition: transform 0.2s;
   margin-bottom: 15px;
   display: block;
+  max-width: 100%;
 }
 body.photography-page .scrollable-gallery img:hover {
   transform: scale(1.05);
