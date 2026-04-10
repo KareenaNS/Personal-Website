@@ -31,7 +31,12 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="headshot.jpg" alt="Reena NS portrait">
+          <div class="hero-collage">
+            <img src="CarPhotos/1.JPG" alt="Car photo">
+            <img src="RealEstate/storefront.png" alt="Real Estate photo">
+            <img src="events/7.jpg" alt="Event photo">
+            <img src="events/2.jpg" alt="Event photo">
+          </div>
         </div>
       </section>
 
@@ -72,11 +77,7 @@
         <div class="gallery-header">
           <div>
             <p class="eyebrow">Portfolio</p>
-            <h2>Filter by style or search for inspiration</h2>
-          </div>
-          <div class="search-control">
-            <span class="material-icons">search</span>
-            <input id="gallerySearch" type="search" placeholder="Search session style or keyword" aria-label="Search gallery">
+            <h2>Filter by category</h2>
           </div>
         </div>
 
@@ -87,28 +88,75 @@
           <button class="filter-button" data-category="realestate">Real Estate</button>
         </div>
 
-        <div class="gallery-grid" id="galleryGrid">
-          <article class="photo-card" data-category="cars">
-            <img src="CarPhotos/1.JPG" alt="Cars photography sample">
-            <div class="photo-meta">
-              <h3>Cars</h3>
-              <p>Dynamic automotive photography capturing the beauty and power of vehicles.</p>
-            </div>
-          </article>
-          <article class="photo-card" data-category="events">
-            <img src="events/1.jpg" alt="Events photography sample">
-            <div class="photo-meta">
-              <h3>Events Photography</h3>
-              <p>Capturing memorable moments at events with dynamic storytelling.</p>
-            </div>
-          </article>
-          <article class="photo-card" data-category="realestate">
-            <img src="RealEstate/abc.jpg" alt="Real Estate photography sample">
-            <div class="photo-meta">
-              <h3>Real Estate</h3>
-              <p>Stunning property photography that showcases homes in their best light.</p>
-            </div>
-          </article>
+        <div class="scrollable-gallery" id="scrollableGallery">
+          <!-- Cars photos -->
+          <img src="CarPhotos/1.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/2.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/3.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/4.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/5.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/6.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/7.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/8.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/9.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/10.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/11.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/12.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/13.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/14.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/15.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/16.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/17.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/18.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/19.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/20.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/21.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/22.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/23.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/24.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/25.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/26.JPG" data-category="cars" alt="Car photography">
+          <img src="CarPhotos/27.JPG" data-category="cars" alt="Car photography">
+          <!-- Events photos -->
+          <img src="events/1.jpg" data-category="events" alt="Events photography">
+          <img src="events/2.jpg" data-category="events" alt="Events photography">
+          <img src="events/3.jpg" data-category="events" alt="Events photography">
+          <img src="events/4.jpg" data-category="events" alt="Events photography">
+          <img src="events/5.jpg" data-category="events" alt="Events photography">
+          <img src="events/6.jpg" data-category="events" alt="Events photography">
+          <img src="events/7.JPG" data-category="events" alt="Events photography">
+          <img src="events/8.JPG" data-category="events" alt="Events photography">
+          <img src="events/9.JPG" data-category="events" alt="Events photography">
+          <img src="events/10.jpg" data-category="events" alt="Events photography">
+          <img src="events/11.JPG" data-category="events" alt="Events photography">
+          <img src="events/12.JPG" data-category="events" alt="Events photography">
+          <img src="events/13.jpg" data-category="events" alt="Events photography">
+          <img src="events/14.JPG" data-category="events" alt="Events photography">
+          <img src="events/15.jpg" data-category="events" alt="Events photography">
+          <img src="events/16.jpg" data-category="events" alt="Events photography">
+          <img src="events/17.JPG" data-category="events" alt="Events photography">
+          <img src="events/18.JPG" data-category="events" alt="Events photography">
+          <img src="events/19.jpg" data-category="events" alt="Events photography">
+          <img src="events/20.jpg" data-category="events" alt="Events photography">
+          <img src="events/21.jpg" data-category="events" alt="Events photography">
+          <img src="events/22.JPG" data-category="events" alt="Events photography">
+          <img src="events/23.jpg" data-category="events" alt="Events photography">
+          <img src="events/24.JPG" data-category="events" alt="Events photography">
+          <img src="events/25.jpg" data-category="events" alt="Events photography">
+          <img src="events/26.JPG" data-category="events" alt="Events photography">
+          <img src="events/27.jpg" data-category="events" alt="Events photography">
+          <img src="events/28.JPG" data-category="events" alt="Events photography">
+          <img src="events/29.jpg" data-category="events" alt="Events photography">
+          <img src="events/30.jpg" data-category="events" alt="Events photography">
+          <img src="events/31.JPG" data-category="events" alt="Events photography">
+          <img src="events/32.jpg" data-category="events" alt="Events photography">
+          <!-- Real Estate photos -->
+          <img src="RealEstate/house.jpg" data-category="realestate" alt="Real Estate photography">
+          <img src="RealEstate/house3.jpg" data-category="realestate" alt="Real Estate photography">
+          <img src="RealEstate/abc.jpg" data-category="realestate" alt="Real Estate photography">
+          <img src="RealEstate/kathy.jpg" data-category="realestate" alt="Real Estate photography">
+          <img src="RealEstate/storefront.png" data-category="realestate" alt="Real Estate photography">
+          <img src="RealEstate/storefront4.jpg" data-category="realestate" alt="Real Estate photography">
         </div>
       </section>
 
@@ -165,13 +213,6 @@
       </section>
     </main>
 
-    <div id="galleryModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-grid" id="modalGrid"></div>
-      </div>
-    </div>
-
     <footer id="foot">
       <h2 class="names">Socials</h2>
       <div class="linksBottom">
@@ -188,72 +229,21 @@
     </footer>
 
     <script>
-      const galleryItems = Array.from(document.querySelectorAll('.photo-card'));
-      const searchInput = document.getElementById('gallerySearch');
       const filterButtons = document.querySelectorAll('.filter-button');
-      let activeCategory = 'all';
-
-      const categoryImages = {
-        cars: Array.from({length: 27}, (_, i) => `CarPhotos/${i + 1}.JPG`),
-        events: Array.from({length: 32}, (_, i) => `events/${i + 1}.jpg`),
-        realestate: ['RealEstate/house.jpg', 'RealEstate/house3.jpg', 'RealEstate/abc.jpg', 'RealEstate/kathy.jpg', 'RealEstate/storefront.png', 'RealEstate/storefront4.jpg']
-      };
-
-      const modal = document.getElementById('galleryModal');
-      const modalGrid = document.getElementById('modalGrid');
-      const closeBtn = document.querySelector('.close');
-
-      closeBtn.onclick = () => modal.style.display = 'none';
-      window.onclick = (event) => { if (event.target === modal) modal.style.display = 'none'; };
-
-      function updateGallery() {
-        const searchValue = searchInput.value.trim().toLowerCase();
-
-        galleryItems.forEach(item => {
-          const title = item.querySelector('h3').textContent.toLowerCase();
-          const description = item.querySelector('p').textContent.toLowerCase();
-          const category = item.dataset.category;
-          const matchesSearch = title.includes(searchValue) || description.includes(searchValue);
-          const matchesCategory = activeCategory === 'all' || category === activeCategory;
-          item.style.display = matchesSearch && matchesCategory ? 'block' : 'none';
-        });
-      }
-
-      searchInput.addEventListener('input', updateGallery);
-
-      galleryItems.forEach(card => {
-        card.addEventListener('click', () => {
-          const category = card.dataset.category;
-          modalGrid.innerHTML = '';
-          categoryImages[category].forEach(src => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = `${category} photo`;
-            modalGrid.appendChild(img);
-          });
-          modal.style.display = 'block';
-        });
-      });
 
       filterButtons.forEach(button => {
         button.addEventListener('click', () => {
           filterButtons.forEach(btn => btn.classList.remove('active'));
           button.classList.add('active');
           const category = button.dataset.category;
-          if (category === 'all') {
-            activeCategory = 'all';
-            updateGallery();
-            modal.style.display = 'none';
-          } else {
-            modalGrid.innerHTML = '';
-            categoryImages[category].forEach(src => {
-              const img = document.createElement('img');
-              img.src = src;
-              img.alt = `${category} photo`;
-              modalGrid.appendChild(img);
-            });
-            modal.style.display = 'block';
-          }
+          const images = document.querySelectorAll('#scrollableGallery img');
+          images.forEach(img => {
+            if (category === 'all' || img.dataset.category === category) {
+              img.style.display = 'block';
+            } else {
+              img.style.display = 'none';
+            }
+          });
         });
       });
 
