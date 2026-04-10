@@ -572,12 +572,12 @@ padding-top: 20px;
   }
 
 /* Photography page styles scoped to photography-page only */
-body.photography-page {
+body.photography {
   background: #f8fafc;
   font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   color: #111827;
 }
-body.photography-page .navbar {
+body.photography .navbar {
   background: #ffffff;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 10px 35px rgba(15, 23, 42, 0.06);
@@ -587,74 +587,74 @@ body.photography-page .navbar {
   padding: 0 32px;
   height: auto;
 }
-body.photography-page .navbar .names {
+body.photography .navbar .names {
   font-size: 24px;
   font-weight: 600;
   margin: 0;
   padding: 20px 0;
 }
-body.photography-page .navbar ul {
+body.photography .navbar ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 30px;
 }
-body.photography-page .navbar li {
+body.photography .navbar li {
   margin: 0;
 }
-body.photography-page .navbar a {
+body.photography .navbar a {
   color: #0f766e;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   transition: color 0.2s ease;
 }
-body.photography-page .navbar a:hover {
+body.photography .navbar a:hover {
   color: #0d5f59;
 }
-body.photography-page .portfolio-page {
+body.photography .portfolio-page {
   padding: 140px 32px 48px;
   max-width: 1300px;
   margin: 0 auto;
 }
-body.photography-page .hero-section {
+body.photography .hero-section {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
   gap: 54px;
   margin-bottom: 48px;
 }
-body.photography-page .hero-copy {
+body.photography .hero-copy {
   max-width: 680px;
 }
-body.photography-page .eyebrow {
+body.photography .eyebrow {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #0f766e;
   font-weight: 700;
   margin-bottom: 14px;
 }
-body.photography-page .hero-section h1 {
+body.photography .hero-section h1 {
   font-family: Wonderbar, sans-serif;
   font-size: clamp(2.4rem, 2.8vw, 4rem);
   line-height: 1.05;
   color: #111827;
   margin-bottom: 24px;
 }
-body.photography-page .hero-text {
+body.photography .hero-text {
   max-width: 640px;
   font-size: 1.05rem;
   line-height: 1.95;
   color: #475569;
   margin-bottom: 28px;
 }
-body.photography-page .hero-actions {
+body.photography .hero-actions {
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
 }
-body.photography-page .button {
+body.photography .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -664,148 +664,148 @@ body.photography-page .button {
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-body.photography-page .button:hover {
+body.photography .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 35px rgba(15, 118, 110, 0.18);
 }
-body.photography-page .button.primary {
+body.photography .button.primary {
   background: #0f766e;
   color: #fff;
 }
-body.photography-page .button.secondary {
+body.photography .button.secondary {
   background: rgba(15, 118, 110, 0.12);
   color: #0f766e;
 }
-body.photography-page .hero-image .hero-collage {
+body.photography .hero-image .hero-collage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   width: 100%;
 }
-body.photography-page .hero-image .hero-collage img {
+body.photography .hero-image .hero-collage img {
   width: 100%;
   border-radius: 14px;
   object-fit: cover;
   height: 140px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
-body.photography-page .about-section {
+body.photography .about-section {
   margin-bottom: 48px;
   padding: 40px;
   background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 100%);
   border-radius: 28px;
 }
-body.photography-page .about-container {
+body.photography .about-container {
   max-width: 900px;
   margin: 0 auto;
 }
-body.photography-page .about-section h2 {
+body.photography .about-section h2 {
   font-family: Wonderbar, sans-serif;
   color: #0f766e;
   margin-bottom: 20px;
   margin-top: 12px;
 }
-body.photography-page .about-section h3 {
+body.photography .about-section h3 {
   font-family: Wonderbar, sans-serif;
   color: #0f766e;
   margin-top: 24px;
   margin-bottom: 12px;
   font-size: 1.1rem;
 }
-body.photography-page .about-section p {
+body.photography .about-section p {
   color: #475569;
   line-height: 1.8;
   margin-bottom: 16px;
 }
-body.photography-page .about-list {
+body.photography .about-list {
   list-style: none;
   padding: 0;
   margin: 16px 0;
 }
-body.photography-page .about-list li {
+body.photography .about-list li {
   padding: 12px 0;
   padding-left: 28px;
   position: relative;
   color: #475569;
   line-height: 1.7;
 }
-body.photography-page .about-list li:before {
+body.photography .about-list li:before {
   content: "✓";
   position: absolute;
   left: 0;
   color: #0f766e;
   font-weight: bold;
 }
-body.photography-page .booking-overview {
+body.photography .booking-overview {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin-bottom: 48px;
 }
-body.photography-page .overview-card,
-body.photography-page .pricing-card,
-body.photography-page .booking-details,
-body.photography-page .booking-form-card {
+body.photography .overview-card,
+body.photography .pricing-card,
+body.photography .booking-details,
+body.photography .booking-form-card {
   background: #fff;
   border-radius: 28px;
   padding: 38px;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.08);
 }
-body.photography-page .overview-card h2,
-body.photography-page .pricing-card h2,
-body.photography-page .booking-details h2,
-body.photography-page .booking-form-card h2 {
+body.photography .overview-card h2,
+body.photography .pricing-card h2,
+body.photography .booking-details h2,
+body.photography .booking-form-card h2 {
   font-family: Wonderbar, sans-serif;
   color: #0f766e;
   margin-bottom: 18px;
 }
-body.photography-page .timeline-list {
+body.photography .timeline-list {
   display: grid;
   gap: 14px;
   margin-top: 22px;
   color: #475569;
 }
-body.photography-page .timeline-list div {
+body.photography .timeline-list div {
   display: flex;
   gap: 14px;
   font-size: 0.98rem;
 }
-body.photography-page .pricing-grid {
+body.photography .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   margin-top: 22px;
 }
-body.photography-page .price-item {
+body.photography .price-item {
   background: #eef2ff;
   padding: 22px;
   border-radius: 24px;
   min-height: 210px;
   box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.05);
 }
-body.photography-page .price-item h3 {
+body.photography .price-item h3 {
   margin-bottom: 10px;
   color: #0f766e;
 }
-body.photography-page .price-item p {
+body.photography .price-item p {
   margin-bottom: 18px;
   color: #475569;
 }
-body.photography-page .price-item strong {
+body.photography .price-item strong {
   font-size: 1.6rem;
   color: #111827;
 }
-body.photography-page .gallery-section {
+body.photography .gallery-section {
   margin-bottom: 48px;
 }
-body.photography-page .gallery-header {
+body.photography .gallery-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
   margin-bottom: 32px;
 }
-body.photography-page .scrollable-gallery {
+body.photography .scrollable-gallery {
   column-count: 4;
   column-gap: 15px;
   padding: 10px;
@@ -814,23 +814,23 @@ body.photography-page .scrollable-gallery {
 }
 
 @media (max-width: 1200px) {
-  body.photography-page .scrollable-gallery {
+  body.photography .scrollable-gallery {
     column-count: 3;
   }
 }
 
 @media (max-width: 800px) {
-  body.photography-page .scrollable-gallery {
+  body.photography .scrollable-gallery {
     column-count: 2;
   }
 }
 
 @media (max-width: 500px) {
-  body.photography-page .scrollable-gallery {
+  body.photography .scrollable-gallery {
     column-count: 1;
   }
 }
-body.photography-page .scrollable-gallery img {
+body.photography .scrollable-gallery img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -839,16 +839,16 @@ body.photography-page .scrollable-gallery img {
   display: block;
   max-width: 100%;
 }
-body.photography-page .scrollable-gallery img:hover {
+body.photography .scrollable-gallery img:hover {
   transform: scale(1.05);
 }
-body.photography-page .filter-buttons {
+body.photography .filter-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 28px;
 }
-body.photography-page .filter-button {
+body.photography .filter-button {
   border: 1px solid rgba(15, 23, 42, 0.16);
   background: transparent;
   color: #0f766e;
@@ -858,82 +858,82 @@ body.photography-page .filter-button {
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
 }
-body.photography-page .filter-button.active,
-body.photography-page .filter-button:hover {
+body.photography .filter-button.active,
+body.photography .filter-button:hover {
   background: #0f766e;
   color: #ffffff;
 }
-body.photography-page .gallery-grid {
+body.photography .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
-body.photography-page .photo-card {
+body.photography .photo-card {
   background: #fff;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-body.photography-page .photo-card:hover {
+body.photography .photo-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
 }
-body.photography-page .photo-card img {
+body.photography .photo-card img {
   width: 100%;
   height: 260px;
   object-fit: cover;
 }
-body.photography-page .photo-meta {
+body.photography .photo-meta {
   padding: 26px 22px 28px;
 }
-body.photography-page .photo-meta h3 {
+body.photography .photo-meta h3 {
   margin-bottom: 10px;
   color: #111827;
 }
-body.photography-page .photo-card {
+body.photography .photo-card {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-body.photography-page .photo-card:hover {
+body.photography .photo-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
 }
-body.photography-page .booking-section {
+body.photography .booking-section {
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: 32px;
   margin-bottom: 48px;
 }
-body.photography-page .availability-grid {
+body.photography .availability-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   margin-top: 24px;
 }
-body.photography-page .availability-grid h3 {
+body.photography .availability-grid h3 {
   margin-bottom: 10px;
 }
-body.photography-page .availability-grid ul {
+body.photography .availability-grid ul {
   list-style: none;
   padding: 0;
   color: #555;
 }
-body.photography-page .availability-grid li {
+body.photography .availability-grid li {
   margin-bottom: 10px;
 }
-body.photography-page .booking-form-card form {
+body.photography .booking-form-card form {
   display: grid;
   gap: 18px;
 }
-body.photography-page .booking-form-card label {
+body.photography .booking-form-card label {
   color: #333;
   font-weight: 700;
 }
-body.photography-page .booking-form-card input,
-body.photography-page .booking-form-card select,
-body.photography-page .booking-form-card textarea {
+body.photography .booking-form-card input,
+body.photography .booking-form-card select,
+body.photography .booking-form-card textarea {
   width: 100%;
   border: 1px solid #d8d8d8;
   border-radius: 16px;
@@ -943,19 +943,19 @@ body.photography-page .booking-form-card textarea {
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-body.photography-page .booking-form-card input:focus,
-body.photography-page .booking-form-card select:focus,
-body.photography-page .booking-form-card textarea:focus {
+body.photography .booking-form-card input:focus,
+body.photography .booking-form-card select:focus,
+body.photography .booking-form-card textarea:focus {
   border-color: #0f766e;
   box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.1);
 }
-body.photography-page .form-note {
+body.photography .form-note {
   color: #5b5b5b;
   font-size: 0.95rem;
   line-height: 1.7;
   margin-top: 4px;
 }
-body.photography-page #foot {
+body.photography #foot {
   position: static;
   margin-top: 40px;
   background: transparent;
@@ -963,39 +963,39 @@ body.photography-page #foot {
   padding-bottom: 40px;
   box-shadow: none;
 }
-body.photography-page #foot .names {
+body.photography #foot .names {
   text-align: center;
   margin-bottom: 18px;
 }
-body.photography-page #foot .linksBottom {
+body.photography #foot .linksBottom {
   justify-content: center;
 }
 @media (max-width: 1080px) {
-  body.photography-page .hero-section,
-  body.photography-page .booking-overview,
-  body.photography-page .booking-section {
+  body.photography .hero-section,
+  body.photography .booking-overview,
+  body.photography .booking-section {
     grid-template-columns: 1fr;
   }
-  body.photography-page .gallery-header {
+  body.photography .gallery-header {
     flex-direction: column;
     align-items: stretch;
   }
-  body.photography-page .search-control {
+  body.photography .search-control {
     width: 100%;
   }
 }
 @media (max-width: 700px) {
-  body.photography-page .portfolio-page {
+  body.photography .portfolio-page {
     padding: 110px 20px 30px;
   }
-  body.photography-page .pricing-grid,
-  body.photography-page .availability-grid {
+  body.photography .pricing-grid,
+  body.photography .availability-grid {
     grid-template-columns: 1fr;
   }
-  body.photography-page .button {
+  body.photography .button {
     width: 100%;
   }
-  body.photography-page .search-control input {
+  body.photography .search-control input {
     width: 100%;
   }
 }
