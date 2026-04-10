@@ -577,6 +577,7 @@ body.photography {
   font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   color: #111827;
 }
+
 body.photography .navbar {
   background: #ffffff;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
@@ -584,25 +585,33 @@ body.photography .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
-  height: auto;
+  flex-wrap: wrap;
+  padding: 12px 32px;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 body.photography .navbar .names {
   font-size: 24px;
   font-weight: 600;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
 }
+
 body.photography .navbar ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 30px;
+  gap: 20px;
 }
+
 body.photography .navbar li {
   margin: 0;
 }
+
 body.photography .navbar a {
   color: #0f766e;
   text-decoration: none;
@@ -610,13 +619,12 @@ body.photography .navbar a {
   font-size: 14px;
   transition: color 0.2s ease;
 }
+
 body.photography .navbar a:hover {
   color: #0d5f59;
 }
 body.photography .portfolio-page {
-  padding: 140px 32px 48px;
-  max-width: 1300px;
-  margin: 0 auto;
+  padding: 32px;
 }
 body.photography .hero-section {
   display: grid;
