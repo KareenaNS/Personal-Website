@@ -689,6 +689,53 @@ body.photography-page .hero-image .hero-collage img {
   height: 140px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
+body.photography-page .about-section {
+  margin-bottom: 48px;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 100%);
+  border-radius: 28px;
+}
+body.photography-page .about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+body.photography-page .about-section h2 {
+  font-family: Wonderbar, sans-serif;
+  color: #0f766e;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+body.photography-page .about-section h3 {
+  font-family: Wonderbar, sans-serif;
+  color: #0f766e;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+body.photography-page .about-section p {
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+body.photography-page .about-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+body.photography-page .about-list li {
+  padding: 12px 0;
+  padding-left: 28px;
+  position: relative;
+  color: #475569;
+  line-height: 1.7;
+}
+body.photography-page .about-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0f766e;
+  font-weight: bold;
+}
 body.photography-page .booking-overview {
   display: grid;
   grid-template-columns: 1fr 1fr;
