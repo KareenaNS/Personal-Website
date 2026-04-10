@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="N.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
   </head>
   <body class="photography-page">
     <nav class="navbar" style="position: fixed; top: 0; left: 0; width: 100%;">
@@ -55,19 +56,24 @@
           <h2>Starting Packages</h2>
           <div class="pricing-grid">
             <div class="price-item">
-              <h3>Portrait Session</h3>
-              <p>1-hour shoot, 15 edited images, online gallery.</p>
-              <strong>$180</strong>
+              <h3>Small Events (> 3 hours)</h3>
+              <p>Online gallery of 50-70 edited photos.</p>
+              <strong>$150</strong>
             </div>
             <div class="price-item">
-              <h3>Events</h3>
-              <p>1.5-hour shoot, location styling, 20 images.</p>
-              <strong>$240</strong>
+              <h3>Large Events (3+ hours)</h3>
+              <p>Online gallery of 100-150 edited photos.</p>
+              <strong>$250+</strong>
             </div>
             <div class="price-item">
-              <h3>Editorial</h3>
-              <p>2-hour session, concept planning, 30 final images.</p>
-              <strong>$320</strong>
+              <h3>Car Photography</h3>
+              <p>1 to 2-hour session, online gallery, and 30-40 final edited images.</p>
+              <strong>$125</strong>
+            </div>
+            <div class="price-item">
+              <h3>Real Estate</h3>
+              <p>1 to 2-hour session, online gallery, 50-60 final edited images of interior and exterior.</p>
+              <strong>$175</strong>
             </div>
           </div>
         </div>
@@ -170,17 +176,19 @@
             <div>
               <h3>Available Days</h3>
               <ul>
-                <li>Tuesday</li>
-                <li>Thursday</li>
+                <li>Monday</li>
+                <li>Friday</li>
                 <li>Saturday</li>
+                <li>Sunday</li>
               </ul>
             </div>
             <div>
               <h3>Appointment Windows</h3>
               <ul>
-                <li>9:30 AM – 12:00 PM</li>
-                <li>1:30 PM – 4:00 PM</li>
-                <li>5:00 PM – 7:30 PM</li>
+                <li>5:00 PM – 12:00 AM</li> 
+                <li>5:00 PM – 12:00 AM</li>
+                <li>9:00 AM – 11:00 PM</li>
+                <li>9:00 AM – 11:00 PM</li>
               </ul>
             </div>
           </div>
@@ -204,6 +212,9 @@
 
             <label for="preferredDate">Preferred Date</label>
             <input id="preferredDate" type="date">
+
+            <label for="location">Location</label>
+            <input id="location" type="text" placeholder="City, venue, or address" required>
 
             <label for="message">Tell me about your shoot</label>
             <textarea id="message" rows="5" placeholder="Describe the idea, location, or vision."></textarea>
@@ -249,11 +260,41 @@
         });
       });
 
+      // Initialize EmailJS
+      // Get your Public Key from https://dashboard.emailjs.com/admin
+      emailjs.init('bKFUVDcGTAD-1R-Aq');
+
       const bookingForm = document.getElementById('bookingForm');
-      bookingForm.addEventListener('submit', event => {
+      bookingForm.addEventListener('submit', async (event) => {
         event.preventDefault();
-        alert('Thanks! Your booking request has been submitted. I will contact you soon.');
-        bookingForm.reset();
+
+        // Prepare template parameters
+        const templateParams = {
+          client_name: document.getElementById('clientName').value,
+          client_email: document.getElementById('clientEmail').value,
+          session_type: document.getElementById('sessionType').value,
+          preferred_date: document.getElementById('preferredDate').value,
+          location: document.getElementById('location').value,
+          message: document.getElementById('message').value,
+          to_email: 'reena.narinesingh@gmail.com' // Your email address
+        };
+
+        try {
+          // Send email using EmailJS
+          // Service ID and Template ID from https://dashboard.emailjs.com
+          const response = await emailjs.send(
+            'service_w3k5b36',
+            'template_3vqn2cs',
+            templateParams
+          );
+          
+          console.log('Email sent successfully:', response);
+          alert('Thanks! Your booking request has been submitted. I will contact you soon.');
+          bookingForm.reset();
+        } catch (error) {
+          console.error('Email send failed:', error);
+          alert('Sorry, there was an error submitting your request. Please try again or email me directly.');
+        }
       });
     </script>
   </body>
