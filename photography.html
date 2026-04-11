@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="N.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/index.min.js"></script>
-  </head>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>  </head>
   <body class="photography">
     <nav class="navbar" style="position: fixed; top: 0; left: 0; width: 100%;">
       <div class="names">Kareena NS</div>
@@ -291,38 +290,44 @@
       // Get your Public Key from https://dashboard.emailjs.com/admin
       emailjs.init('bKFUVDcGTAD-1R-Aq');
 
-      const bookingForm = document.getElementById('bookingForm');
-      bookingForm.addEventListener('submit', async (event) => {
-        event.preventDefault();
+  const bookingForm = document.getElementById('bookingForm');
 
-        // Prepare template parameters
-        const templateParams = {
-          client_name: document.getElementById('clientName').value,
-          client_email: document.getElementById('clientEmail').value,
-          session_type: document.getElementById('sessionType').value,
-          preferred_date: document.getElementById('preferredDate').value,
-          location: document.getElementById('location').value,
-          message: document.getElementById('message').value,
-          to_email: 'reena.narinesingh@gmail.com' // Your email address
-        };
+  if (typeof emailjs === 'undefined') {
+    console.error('EmailJS failed to load');
+  } else {
+    emailjs.init({
+      publicKey: 'bKFUVDcGTAD-1R-Aq'
+    });
 
-        try {
-          // Send email using EmailJS
-          // Service ID and Template ID from https://dashboard.emailjs.com
-          const response = await emailjs.send(
-            'service_w3k5b36',
-            'template_3vqn2cs',
-            templateParams
-          );
-          
-          console.log('Email sent successfully:', response);
-          alert('Thanks! Your booking request has been submitted. I will contact you soon.');
-          bookingForm.reset();
-        } catch (error) {
-          console.error('Email send failed:', error);
-          alert('Sorry, there was an error submitting your request. Please try again or email me directly.');
-        }
-      });
+    bookingForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const templateParams = {
+        client_name: document.getElementById('clientName').value,
+        client_email: document.getElementById('clientEmail').value,
+        session_type: document.getElementById('sessionType').value,
+        preferred_date: document.getElementById('preferredDate').value,
+        location: document.getElementById('location').value,
+        message: document.getElementById('message').value,
+        to_email: 'reena.narinesingh@gmail.com'
+      };
+
+      try {
+        const response = await emailjs.send(
+          'service_w3k5b36',
+          'template_3vqn2cs',
+          templateParams
+        );
+
+        console.log('Email sent successfully:', response);
+        alert('Thanks! Your booking request has been submitted. I will contact you soon.');
+        bookingForm.reset();
+      } catch (error) {
+        console.error('Email send failed:', error);
+        alert('Sorry, there was an error submitting your request. Please try again or email me directly.');
+      }
+    });
+  }
     </script>
   </body>
 </html>
