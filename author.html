@@ -1,157 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="author">
   <head>
-    <title>Writer</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" type="image/png" href="N.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writer | Reena NS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="N.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
-  <body>
-    <body style="background-color:aliceblue">
 
-      <nav class="menu">
-        <div class="name">Kareena NS</div>
-        <ul>
-          <li><a href="">Projects</a></li>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#myDiv">Writing Sample</a></li>
-          <li><a href="index.html">Main Page</a></li>
-          <li><a href="mailto:reena.narinesingh@gmail.com">Email</a></li>
-          <li><a href="#bottom">Socials</a>
-        </ul>
-      </nav>
-      <img src="headshot.jpeg" alt="This image cannot be displayed." width="150" class="logoimage rounded-img" height="150" onclick="myFunction()" height="150"/>
-      <p class="imageclick">(click on the image above)</p>
-      <div class="popup" onclick="myFunction()">
-        <span class="popuptext" id="myPopup">Kareena NS is an aspiring author. Scroll to learn more.</span>
-      </div>
-      <script>
-        // When the user clicks on div, open the popup
-        function myFunction() {
-          var popup = document.getElementById("myPopup");
-          popup.classList.toggle("show");
-        }
-        </script>
+  <body class="author-page">
+    <nav class="author-nav">
+      <div class="brand">Reena NS</div>
+      <ul class="nav-links">
+        <li><a href="#sample">Writing Sample</a></li>
+        <li><a href="index.html">Main Page</a></li>
+        <li><a href="mailto:reena.narinesingh@gmail.com">Contact</a></li>
+        <li><a href="#bottom">Socials</a></li>
+      </ul>
+    </nav>
 
-    <div id ="projects">
-      <img src="6.png" alt="This image cannot be displayed." width=100%>
-      <img src="8.png" alt="This image cannot be displayed." width=100%>
-      <img src="9.png" alt="This image cannot be displayed." width=100%>
-      <img src="7.png" alt="This image cannot be displayed." width=100%>
-    </div>
-    <div id ="aboutme">
-        <h2 class="abme">About Me</h2>
-        <p class="descript">My name is Kareena NS, and I am a 3rd-year undergrad student studying
-            computer science at the
-            Georgia Institute of Technology in midtown Atlanta. Subsequently, this also means that
-            this entire website was coded by me in HTML. In 2021, I was awarded an honorable
-            mention for my writing portfolio in the national Scholastic Arts and Writing Awards. I was also
-            a grand prize winner for Amazon Prime’s Modern Love contest hosted on Wattpad. Currently, I am
-            pursuing an agent for my book, Hana and the Memoranda. If you are interested in reading a sample
-            of my writing, you can find the first chapter of Hana and the Memoranda down below. If you have
-            any business inquiries, please reach out to me at the email below. At the very bottom of this
-            page, you can also find all of my socials.</p>
-    </div>
-    <p class="ahhh">
-      <a href="mailto:reena.narinesingh@gmail.com">reena.narinesingh@gmail.com
-      </a>
-    </p>
-    <img src="quote.png" alt="This image cannot be displayed." width=100%>
-    <div id="container2">
-      <div id="content">
-      <script>
-            const scrollToBottom = () => {
-                const div = document.getElementById("myDiv");
-                div.scrollTo({
-                    top: div.scrollHeight,
-                    behavior: 'smooth'
-                });
-            }
-            const scrollToTop = () => {
-                const div = document.getElementById("myDiv");
-                div.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-            window.onload = function() {
-              const container2 = document.getElementById('container2');
-              const myDiv = document.getElementById('myDiv');
-              myDiv.scrollLeft = (container2.innerWidth - window.innerWidth) / 2;
-            };
-        </script>
+    <main>
+      <section class="author-hero">
+        <img
+          src="headshot.jpeg"
+          alt="Portrait of Reena NS"
+          class="author-headshot"
+        />
+
+        <div class="author-hero-copy">
+          <p class="eyebrow">Writer • Storyteller • Creative Technologist</p>
+          <h1>Reena NS</h1>
+          <p>
+            Take a step into my mind. I write stories ranging from murder mysteries to 
+            enemies-to-lovers in an academic setting. Currently, I am seeking representation
+            for my work, Game On! In 2021, I received an honorable mention for my writing 
+            portfolio in the national Scholastic Arts and Writing Awards. I was also a grand prize 
+            winner for Amazon Prime’s Modern Love contest hosted on Wattpad.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="button primary">View Projects</a>
+            <a href="#sample" class="button secondary">Read Sample</a>
+          </div>
+        </div>
+      </section>
+
+
+    <div class="book-showcase">
+      <div class="book-mockup">
+        <div class="book-face book-front">
+          <img src="gameOn.png" alt="Cover of Game On!" />
+        </div>
+        <div class="book-face book-spine"></div>
+        <div class="book-face book-pages"></div>
       </div>
     </div>
-    <div id ="myDiv">
-        <h2 class="abme">Writing Sample</h2>
-        <p class = "chapter">How to… Be Rejected 30 Times</p>
-        <p class = "chap">
-            Hana cradled her funnel cake like it was her child. She lost her appetite, but her parents raised her better than to throw away $3.50. The only reason she bought the carnival snack was for her brother to stop big-brother-ing and leave her be.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;She sighed, tore off a piece of the golden-brown deliciousness, and let her eyes wander around the park. Hana shivered a bit from the chilly night air. Her dress plunged well past her collarbone.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Children roared screams of excitement and raced each other to the teenybopper rides, teens scoured the park for the greatest thrill rides, and parents chased after both groups like they were balloons a few seconds from floating away.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;The scent of buttery popcorn, freshly-fried funnel cake, and sweaty bodies mingled in the air. One of Hana’s favorite summer activities was going to amusement parks. The thrill of adrenaline pounding through the air, electrified by shrieks of delight from those on the rollercoasters… Nothing was better than feeling you, and everyone around you, having a great time. However, today, she felt like a raincloud in a perfectly clear sky.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana’s eyes fell on her phone on the table beside her. It was only 6:52, which meant… she turned around and spotted her brother in the building behind her. Posted up at Zoid Destroyer with a roll of quarters on top of the machine, Ethan posed in a typical hardcore, all-nighter stance. She was going to be there for a while.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Splat!
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana looked down at her funnel cake in the red cardboard boat and groaned. God really did hate her, huh? Hana glanced up at the sky and silently cursed the bird that left its… droppings, behind. That's fine... Hana didn't feel like finishing the funnel cake anyway.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Frustrated, she got up and took one last grimace at the white splatters on the confectionary treat before tossing it in one of the big metal bins near the benches. Maybe a Slurpee would make her feel better.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;She tried to peer past clumps of people and see which food carts sold Slurpees, but because she was so short, she had to stand on a bench to see past the crowd. Ah, bingo! A stand with Slurpees and no line!
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana hopped off the bench and walked over to it, only to be cut off by someone. She opened her mouth to protest, but the boy in front of her turned around and gave her a sickly-sweet smile. Grumbling, she stood in line behind him.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;What a jerk. He must have seen her running toward the line.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;After a few minutes of angrily fuming, Hana’s turn to order came. She flashed a bright smile and stood on her tiptoes to give the woman behind the forest-green-specked counter her order. After she asked for her blue Slurpee, Hana reached into her pocket for the remnants of the twenty Ethan gave her. Before she grabbed it, though, the cashier interrupted her and said, "Don't worry about it, the boy in front of you paid."
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Narrowing her eyes, Hana looked around, but she didn’t see him. Without a word, she shrugged and shuffled through her cash until she found a ten-dollar bill. She told the cashier to pocket the boy’s money and started walking to her picnic table.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;However, instead of it being empty, the boy from the line sat with his legs spread out like a starfish. Nodding, Hana bit her lip. Figured. Today was truly the worst day of her life. From the failed singing audition earlier till now… she hadn’t felt this terrible since last year, when she royally screwed up in a dance recital by falling flat on her butt. With dismay, she turned to find another seat somewhere else.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Wait!"
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;She paused and turned around to look at him. Their eyes locked, and Hana’s breath caught. It felt like he saw her… truly saw her. Plus, he was insanely attractive. Her eyes left his, and she gave him a once-over.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;The haircut the boy sported, and the stupidly expensive clothes wore, told Hana everything she needed to know. He was a rich kid, most likely the brat of a double-income household both making six figures. So much for being hot.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Sorry, I was just- did you get my change?" He rose from the bench and walked over to her. He was a lot taller than she expected. Hana backed away. "N-no. I g-gave your m-money to the cashier as a t-tip.”
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Are you nervous, shawty?" he asked. Hana cringed and almost laughed. If this was any other day, she would have been rolling on the floor and making fun of him, but it wasn't. Today was today, and today sucked. And she really wasn't in the mood for someone else mocking her stutter.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"T-t-this is j-just how I talk," she said in the harshest tone she could muster. She moved past him with the intention of finding her brother, but the boy cut her path off yet again.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Listen, I just wanted to apologize for cutting you in line," he said. Hana’s eyes narrowed. He didn’t seem sorry. His lips were curved up in a half-smile. She wished she could read people's minds in situations like this.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"I need to f-find my br-brother, so if you w-would-"
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"You know, I've never met a girl like you. You're actually really pretty. You know, for someone so short," he noted, giving Hana a once-over. Her face grew a bright red, and her cheeks fanned with plumes of red heat. What was wrong with him?
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Yeah? Well, you're a jerk," she spat out, turning on her heel.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"You didn't stutter."
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana paused. As much as she hated to admit it, he was right. After a moment of silence, he cleared his throat. "Just now, when you got mad at me," he pointed out.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;By golly, maybe Hana just had to be at her wit’s end all the time to get people to take her seriously. But she didn't think angry-singing Adele would get her a singing gig.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Taking the opportunity to edge closer, the boy continued.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"I didn't mean to insult you. I just meant to say that you're beautiful," he corrected himself, then cocked his head to the side as he stared at her.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;He must be questioning her stage get-up. Her brother's boyfriend, Oliver, styled her to perfection. She had to admit when he was finished—she looked good enough to be a model.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;In an eggplant purple color, the neckline landed a little lower than Hana would like, but she liked the way it showed off her favorite birthmark just below her clavicle. Oliver paired the dress with a pair of sparkly purple heels that reminded Hana of Dorothy's red shoes from The Wizard of Oz.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana felt so confident stepping up on that stage… and then, she got her 30th singing rejection. But she should have guessed that she’d get made fun of, even by a judge that had a speech impediment growing up, too. "Are you a performer somewhere?" he asked.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana fiddled with her keychain. "I w-want to be a s-singer.” She couldn't believe she was giving this boy the time of day, but she was fascinated by the fact that she talked to him without stuttering. That had never happened before.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"What's stopping you?" The fact that every place I’ve auditioned to has turned me down. "My stutter and n-nerves," she confessed and plopped down onto the bench. He sat beside her.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Well, you seemed pretty fine when you were yelling at me. Maybe it's because you like me," he teased.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;She scoffed at the ridiculous thought. Her? Like him? Sure, he was cute, but he was also a rich kid, and Hana didn’t like the cocky rich kids that went to her middle school.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"It's b-because I was s-so angry," she justified and folded her arms over her chest.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;The boy took a moment before he spoke again. He seemed to be using his brain, something that must be foreign to him.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Maybe it's because you have something to prove to everyone else," he said, and for once, Hana didn't have anything to retort back. She let her gaze fall to the blue Slurpee in her hands. Taking her silence as the end of the conversation, the boy finished his ice cream and patted her back. "See you around, Popstar."
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;When Hana glanced back up, the boy was gone, and the rush of people all around seemed so distant. The night breeze swept her hair behind her back. With a long breath, she disappeared into the arcade to find her brother.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;She spotted him and groaned. A small group of people surrounded him. Whenever they went anywhere, people always struck up small talk with Ethan... and ogled Hana like a burnt piece of toast. Last year, Ethan and his friends became local heroes because they saved their favorite hangout spot from closing.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Although Ethan had been away for most of the summer at a robotics camp, and Hana had been busy with dance classes, she still felt like a sore thumb.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;With a sigh at her luck, she headed toward her brother. The girls that were chatting him up glared at her when she wedged herself between them. Ethan flashed a smile at the girls before turning to Hana.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;"Ready to go home?" he asked. She knew he was waiting for her to tell him that she was okay. She couldn't muster up the nerves to say anything positive about today. All she wanted to do was crawl into her bed and sleep for eternity.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hana gave a tight-lipped smile and nodded as they set off toward the car.
-            </p>
+
+    <div class="book-blurb">
+      <p>
+Nalini came to college with one goal: win the Game On! showcase.
+She didn’t plan on competing against her ex—or realizing that the spark between them might be the one thing she can’t control.
+      </p>
     </div>
-    <div id="bottom">
-      <h2 class="abme">Socials</h2>
+
+
+      <section id="sample" class="sample-section">
+        <div class="section-heading">
+          <p class="eyebrow">Excerpt</p>
+          <h2>Game On!</h2>
+        </div>
+
+        <div class="sample-card">
+          <p class="sample-title">The Start of a New Beginning</p>
+
+          <div class="sample-scroll">
+            <div class="sample-text">
+
+      <pre>
+      
+      When I imagined the most important moment of my life, I pictured myself calm, confident, and definitely not spiraling into a bag of hot Cheetos.
+        By three, my stomach started churning. 
+      By four, I was breaking out in hives.
+      By five, I stress-ate an entire semester’s worth of mango chow my dad made for me before move-in day. 
+      What can I say? When I’m stressed, I default to spicy.
+      By the time I stopped in front of the oak double doors of Game On!’s meeting room, I was soaked in sweat and actively panicking. If I didn’t make it in… my life was over. I spent my entire high school working toward getting into EAU’s prestigious game dev club. What if they hated me? What if they didn’t let me in? 
+        Okay, Nalini, calm down, I told myself. No matter the outcome, you’ll still be alive at the end of the day. Hopefully. 
+        I pushed the door open with a metallic click, and as soon as I walked in, a gust of cold air greeted me. And then… I saw him. Shaz. Sitting in the middle of the front row, chatting with what looked like one of the members of the exec board. What was he doing here? I thought he hated coding. 
+        He must have sensed me staring at him. He looked up from his conversation, and his dark brown eyes landed on me. Shaz looked the same as the last time I saw him before summer break—black rimmed glasses, scruffy, dark hair, and a slightly-patchy goatee.
+      He scanned me for a moment before he turned his attention back to the boy like I was nothing more than a stray piece of lint on his shirt to brush off.
+        My heart sank to my stomach. 
+      Well, so much for that pep talk at the door this morning. This day officially stunk. And I thought the worst part of my day would be starting it in a ditch looking for my phone five minutes before class started. 
+      I scurried to grab a seat in the second row, almost right above him and the boy. What were they even talking about? Why the hell would Shaz come here? He didn’t know how to code, or even like it. Unless he wanted to get back together…
+        “And between us… if you just agree with what everyone else says during their speech, you should be fine. Just take bits and pieces from everyone else,” the guy whispered to Shaz. I knew it. He didn’t even have any credentials to be here. Hell, it would take a miracle to get Shaz to learn how to code in a year, far less for a summer.
+        After a few moments of quiet chatter around me, Shaz turned around and met my eyes. His full lips curved up and said everything he didn’t. I’m here, in your space, and there’s nothing you can do about it. 
+        “Hey, is this seat taken?”
+      “Even if it isn’t, I’m going to say ‘yeah’ because I’m in an extra pissy mood right now,” I retorted to the bodiless voice next to me, my gaze not leaving Shaz’s. Finally, Shaz turned around. The person sat anyway, and I scowled. Of course, they did. Because the natural next step after someone is rude to you is trying to sit next to them. I glanced around. Like ten minutes ago, the room was still half empty, so there wasn’t even the excuse that all the seats were taken. 
+      When I turned to look at who the person was, I gasped. “Oh lord, sorry Rasheed. I ent even know it was you.” 
+      He folded his arms over his chest and glared at me. My aforementioned time in the ditch this morning was made a lot shorter by one tall, curly-haired boy. We’d only known each other a few hours, but the moment I learned he was Trinidadian too, I decided he was my favorite person on campus.
+      “Yuh should be sorry gyal,” Rasheed said, half-serious. “You seem to be everywhere I turn. Like you is my soulmate?” 
+      I felt my cheeks get hot, and I smiled. Out of the corner of my eyes, I spotted Shaz turn around and look at Rasheed, then me. 
+      “Perhaps, or maybe, we meant to be arch-nemeses,” I joked. 
+      Rasheed shook his head. “I think you already find an archnemesis,” he said, then pointed to Shaz with his lips. He had turned around and was silent, his fists clenched on his desk. 
+      “Alright everyone, today’s a very special day. Recruitment day!” the president announced, then clapped her hands together. “My name is…” Emily Stanford, third-year and top of the school of computational media. She built the most impressive game to date in the club with a team of seniors who graduated years before. I might have done a little cyberstalking on her. 
+      “Emily, and I’m Game On!’s president. Usually, we do introduction presentations as auditions,” she started. Usually? I had spent months prepping for mine, today. “But this year, I want to try something different to filter recruits into members. A coding challenge!”
+      Cold spread across my chest and trickled into my limbs. I wasn’t prepared for something so on-the-nose. Game On! never had live auditions before. Not in any of the archives, forums, or Reddit threads I’d dug through at two in the morning. This was a casting call, and I hadn’t even learned my lines.
+      “Each of you guys will have an hour to code a prompt you can choose from this list.” Emily clicked her mousepad definitively, and the next slide of her presentation contained a list of about 20 prompts—dense and unforgiving. I scanned them. Physics-based movement system. Procedural terrain generator. Dialogue tree with branching consequences.
+      My brain stalled, and I glanced around the room. People were shifting nervous glances to each other. Next to me, Rasheed whistled low. 
+      “Wam gyal, like yuh nervous?” he whispered to me. 
+      “Aren’t you?” I asked him through pursed lips. He looked the way I wanted to feel—as confident as a seagull hungry at sunset.
+      “I’ll give you all a minute to choose your prompt, but once it’s 5:35, your hour begins.”
+      I pulled out my laptop and booted it up. Looks like we weren’t wasting any time.
+      Someone in the third row raised his hand. Emily frowned and lifted a brow, but motioned for him to speak. “What if we already prepared introductory presentations?”
+      Emily gave a small, tight-lipped smile. “Unfortunately due to some incidents of cheating last year, we won’t be doing that for recruitment. But hey—stick around and you’ll still get four teams battling it out, a cash prize, and a shot at pitching to Blitz’s CEO. Just with more… precise recruitment.”
+      A few people laughed. No one sounded entirely relaxed.
+      “Now,” she continued. “Remember that it doesn’t have to be perfect. Let’s see what you can do.”
+      She clapped once, and a timer at the top of her laptop screen started. The room dropped to the decibels of held breaths and utmost concentration. 
+      I scanned through the list again, and finally, my gaze landed on a prompt that stuck out to me. ‘Design a dialogue system with branching choices and meaningful consequences that affect the outcome of a short scene.’ 
+      That was doable. It was harder than other prompts… but like she said—it didn’t have to be perfect. It just had to be good. 
+      I hovered over it for a second longer, weighing my options. Safe… or standout? My fingers moved before I could second-guess myself, and I was already typing. 
+      By the ten minute mark, I had something basic mapped out. By thirty, the logic was in place, branches connected, outcomes starting to take shape. 
+      I exhaled slowly, flexing my fingers before diving back in. The branches were there, but they felt… shallow. Predictable. Like I’d taken the safest possible route through every choice.
+      Not good enough. I tweaked a condition, added another path. Then another. If the player chose A, it looped back with consequences. If they chose B, it locked them out of an entire branch.
+      I leaned back slightly, scanning through my logic—And made the mistake of looking up.
+      In the row in front of me, Shaz was already done. Or, at least, it looked like it. His screen was too dark for me to see—damn those privacy protectors, but he wasn’t typing anymore. Just… watching his screen, one hand resting against his mouth like he was thinking through something instead of scrambling to finish.
+      My stomach tightened. No way.
+      I glanced back at mine, suddenly hyper-aware of every messy line, every rushed workaround.
+      Focus, Nalini.
+      I forced myself back into it, tightening my code, smoothing transitions, making sure nothing broke if someone chose the “wrong” option. Finally, I got to the point where everything felt cleaner, and my unit tests ran. My comments documenting functionality was janky, but the logic worked. 
+      The timer ticked down in the corner of Emily’s screen. 12:43. Plenty of time. Unless something went wrong. Like on cue—Unity decided today was my day.
+      It froze. I blinked. Clicked. Nothing.
+      My breath caught in my throat. 
+      No, no, no—
+      I ran it again.
+      Error.
+      A line I’d just edited. A condition misfiring, breaking the entire branch. I swallowed hard, fingers moving faster now, backtracking, scanning, trying to find where it all went sideways. 
+      12:52. I was seconds away from either fixing it or full-on breaking down.
+      Think. Don’t panic—trace it.
+      My eyes locked onto the condition. The one I’d just changed.
+      If choice B, then—
+      Wait. I’d flipped it. I sucked in a breath, fingers moving fast, correcting the logic, rerunning the program—
+      For half a second, nothing happened. Then—It worked. Every branch, every condition, exactly how I intended. A shaky breath slipped out of me, something between a laugh and a sob.
+      Okay. Okay, I was back.
+      “Time!”
+      </pre>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-grid">
+        <a href="https://www.wattpad.com/story/262831911-ivory-child-%E2%9C%94%EF%B8%8F" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-link">
+
+          <article class="project-card">
+            <img src="bookMockups.png" alt="Project cover for Ivory Child" />
+            <div class="project-card-content">
+              <h3>Ivory Child</h3>
+              <p>
+                What happens when the perfect student meets the boy that can cause a school 
+                to fall apart? Exclusively on Wattpad.
+              </p>
+            </div>
+          </article>
+
+        </a>
+
+<a href="https://docs.google.com/forms/d/1scpOGFrf4ZIZpYROATYbnLXHaoHPH0QuQlwPEqwF62g/edit"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="project-link">
+
+  <article class="project-card">
+    <video class="project-video" autoplay muted loop playsinline>
+      <source src="bookMockups.mp4" type="video/mp4">
+    </video>
+
+    <div class="project-card-content">
+      <h3>Interested in beta reading?</h3>
+      <p>
+        Currently in search of beta readers for Game On!, a New Adult romance.
+        Click on this tile to be rediurected to a form where you can sign up to read and provide feedback.
+      </p>
+    </div>
+  </article>
+
+</a>
+
+          <!-- <article class="project-card">
+            <img src="9.png" alt="Project cover for featured manuscript three" />
+            <div class="project-card-content">
+              <h3>Featured Project</h3>
+              <p>
+                A polished concept built around vivid characters, striking
+                visuals, and the kind of emotional stakes that linger.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="7.png" alt="Project cover for featured manuscript four" />
+            <div class="project-card-content">
+              <h3>Featured Project</h3>
+              <p>
+                Another creative work in progress showcasing story-first
+                storytelling and a strong focus on atmosphere and relationships.
+              </p>
+            </div>
+          </article> -->
+        </div>
+      </section>
+    </main>
+
+    <footer id="bottom">
+      <h2 class="footer-heading">Socials</h2>
+
       <div class="linksBottom">
-        <a href="https://www.instagram.com/reenans_writes/">
-          <img src="1.png" alt="This image cannot be displayed." class="smslogos"/> 
+        <a href="https://www.instagram.com/reenans_writes/" aria-label="Instagram">
+          <img src="1.png" alt="Instagram" class="smslogos" />
         </a>
-        <a href="https://www.wattpad.com/user/reena-ns">
-          <img src="2.png" alt="This image cannot be displayed." class="smslogos"/> 
+        <a href="https://www.wattpad.com/user/reena-ns" aria-label="Wattpad">
+          <img src="2.png" alt="Wattpad" class="smslogos" />
         </a>
-        <a href="https://www.youtube.com/channel/UCB5_0GV17GqFb7YtmSkwgkw">
-          <img src="3.png" alt="This image cannot be displayed." class="smslogos"/> 
+        <a href="https://www.youtube.com/channel/UCB5_0GV17GqFb7YtmSkwgkw" aria-label="YouTube">
+          <img src="3.png" alt="YouTube" class="smslogos" />
         </a>
-        <a href="https://www.tiktok.com/@reenanswrites">
-          <img src="4.png" alt="This image cannot be displayed." class="smslogos"/> 
+        <a href="https://www.tiktok.com/@reenanswrites" aria-label="TikTok">
+          <img src="4.png" alt="TikTok" class="smslogos" />
         </a>
-
-
       </div>
-      <hr class="custom-line">
-    </div>
+
+      <hr class="custom-line" />
+    </footer>
   </body>
 </html>
