@@ -1,131 +1,138 @@
 <!DOCTYPE html>
-<html class="home">
-  <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" type="image/png" href="N.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <body>
-    <div class="body1">
-      
-      <nav class="navigation" style="position: fixed; 
-      top: 0; 
-      left: 0; 
-      width: 100%;">
-        <div class="maname">Kareena NS</div>
-        <ul>
-          <li><a href="author.html">Writer</a></li>
-          <li><a href="photography.html">Photography</a>
-          <li><a href="mailto:reena.narinesingh@gmail.com">Email</a></li>
-        </ul>
-      </nav>
+<html lang="en" class="home">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kareena NS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="N.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body class="home-body">
+  <nav class="navigation">
+    <div class="brand">Kareena NS</div>
+    <ul>
+      <li><a href="author.html">Writer</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="mailto:reena.narinesingh@gmail.com">Email</a></li>
+    </ul>
+  </nav>
 
-      <img 
-      src="warning.png" 
-      alt="Logo" 
-      width="80%" 
-      style="
-        display: block; 
-        margin: 0 auto; 
-        margin-top: 10px; 
-        cursor: pointer; 
-      " 
-      onclick="scrollToAbout()" 
-      />
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
 
-      <div id="urmom">
-        <img src="headshot.jpeg" alt="Logo" width="300" height="300" style="display: block; margin: 0 auto; border-radius: 50%; margin-top: 100px;"> 
-      </div>
-      <div id="aboutme">
-        <h2 class="ab">About Me</h2>
-        <div id = "describe">
-          <p class="descr">My name is Kareena NS, and I am a Georgia Tech graduate working in the 
-            IT department at the City of Morrow. I tend to dabble in coding (as in, it's my entire career),
-            so check out some of my work down below!</p>
+      <div class="hero-content">
+        <p class="eyebrow">Creative technologist · writer · photographer</p>
+        <h1>Designing work that feels human, thoughtful, and alive.</h1>
+        <p class="hero-text">
+          I’m Kareena NS, a Georgia Tech graduate with a background in technology,
+          storytelling, and visual creativity. I build, write, and create with a focus
+          on clarity, atmosphere, and personality.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="photography.html" class="btn btn-secondary">View Photography</a>
         </div>
       </div>
 
-      <script>
-        function scrollToAbout() {
-        const aboutSection = document.getElementById('urmom'); 
-        aboutSection.scrollIntoView({ behavior: 'smooth' }); 
-      }
-      </script>
-    <p class="ah">
-      .
-    </p>
+      <button class="scroll-cue" onclick="scrollToAbout()" aria-label="Scroll to About section">
+        <img src="arrow.png" alt="Scroll down" />
+      </button>
+    </section>
 
+    <section id="about" class="about-section">
+      <div class="aboutt-card">
+        <div class="about-image-wrap">
+          <img src="headshot.jpeg" alt="Portrait of Kareena NS" class="headshot" />
+        </div>
 
-    <div class="contain"> 
-      <h2 class="ab">Projects</h2>
-      <div class="row">
-        <a href="https://kareenans.github.io/cc-vis/"> <div class="module">
-          <img src="cc-vis.png" alt="Global Climate Change"> 
-          <h3>Global Climate Change</h3>
-          <p>A portfolio of charts using Chart.js and d3 to outline the impact of climate change globally over time.</p>
+        <div class="about-copy">
+          <p class="section-label">About Me</p>
+          <h2>Creative, technical, and detail-oriented.</h2>
+          <p>
+            My name is Kareena NS, and I’m a Georgia Tech graduate working in technology
+            while continuing to grow my creative work in writing and photography.
+          </p>
+          <p>
+            I’m especially drawn to projects that balance structure with personality —
+            whether that means building digital experiences, telling compelling stories,
+            or creating visuals with a distinct point of view.
+          </p>
+
+          <div class="mini-links">
+            <a href="author.html">Explore Writing</a>
+            <a href="photography.html">Explore Photography</a>
+            <a href="mailto:reena.narinesingh@gmail.com">Get in Touch</a>
+          </div>
         </div>
-        </a>
-        <a href="https://kareenans.github.io/the-district/"> <div class="module">
-          <img src="the-district.png" alt="The District"> 
-          <h3>The District</h3>
-          <p>A frontend web application for the City of Morrow's outdoor event venue, The District.</p>
-        </div>
-        </a>
-        <a href="https://github.com/wShawGitHub/QualPat-JID-4119-"> <div class="module">
-          <img src="qualpat.png" alt="QualPat"> 
-          <h3>QualPat</h3>
-          <p>My final project for junior design. A sentiment analysis using Google's NLP that outputs visualizations.</p>
-        </div>
-        </a>
       </div>
-  
-      <div class="row"> 
-        <a href="https://github.com/KareenaNS/Sanitation-Trash-Pickup"> <div class="module">
-          <img src="waste-wise.png" alt="waste-wise"> 
-          <h3>Waste Wise</h3>
-          <p>A web and mobile app to track trash pickup around Morrow.</p>
-        </div>
-        </a>
-        <a href="https://kareenans.github.io/Personal-Website/"> <div class="module">
-          <img src="personal-website.png" alt="personal-website"> 
-          <h3>Portfolio</h3>
-          <p>You're looking at it! This here website.</p>
-        </div>
-        </a>
-        <a href="https://github.com/KareenaNS"> <div class="module">
-          <img src="mystery.jpg" alt="mystery"> 
-          <h3>A Mystery</h3>
-          <p>...what will she work on next?</p>
-        </div>
-        </a>
+    </section>
+
+    <section class="focus-section">
+      <div class="focus-intro">
+        <p class="section-label">What I Do</p>
+        <h2>A few ways I work creatively.</h2>
       </div>
+
+      <div class="focus-grid">
+        <article class="focus-card">
+          <span class="material-icons">edit</span>
+          <h3>Writing</h3>
+          <p>
+            Fiction, storytelling, and narrative-driven creative work with a strong voice
+            and emotional texture.
+          </p>
+        </article>
+
+        <article class="focus-card">
+          <span class="material-icons">photo_camera</span>
+          <h3>Photography</h3>
+          <p>
+            Visual work centered on mood, composition, and capturing moments with style
+            and intention.
+          </p>
+        </article>
+
+        <article class="focus-card">
+          <span class="material-icons">code</span>
+          <h3>Technology</h3>
+          <p>
+            A technical foundation that helps me build polished, useful experiences with
+            both logic and creativity in mind.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <h2 class="footer-title">Socials</h2>
+    <div class="linksBottom">
+      <a href="https://github.com/KareenaNS" aria-label="GitHub">
+        <img src="github.png" alt="GitHub" class="smslogos" />
+      </a>
+      <a href="https://www.instagram.com/reena_ns/" aria-label="Instagram">
+        <img src="1.png" alt="Instagram" class="smslogos" />
+      </a>
+      <a href="https://www.facebook.com/share/1GzgQjkDGT/?mibextid=wwXIfr" aria-label="Facebook">
+        <img src="facebok.png" alt="Facebook" class="smslogos" />
+      </a>
+      <a href="https://www.youtube.com/@reena_ns" aria-label="YouTube">
+        <img src="3.png" alt="YouTube" class="smslogos" />
+      </a>
+      <a href="https://www.tiktok.com/@shethacoolie" aria-label="TikTok">
+        <img src="4.png" alt="TikTok" class="smslogos" />
+      </a>
     </div>
+  </footer>
 
-    <p class="ah">
-      .
-    </p>
-
-
-    <div id="footer"> <h2 class="maname">Socials</h2>
-      <div class="linksBottom">
-        <a href="https://github.com/KareenaNS">
-          <img src="github.png" alt="Github" class="smslogos"/> 
-        </a>
-        <a href="https://www.instagram.com/reena_ns/">
-          <img src="1.png" alt="Instagram" class="smslogos"/> 
-        </a>
-        <a href="https://www.facebook.com/share/1GzgQjkDGT/?mibextid=wwXIfr">
-          <img src="facebok.png" alt="Facebook" class="smslogos"/> 
-        </a>
-        <a href="https://www.youtube.com/@reena_ns">
-          <img src="3.png" alt="Youtube" class="smslogos"/> 
-        </a>
-        <a href="https://www.tiktok.com/@shethacoolie">
-          <img src="4.png" alt="TikTok" class="smslogos"/> 
-        </a>
-      </div>
-    </div>  
-  </div>
-  </body>
+  <script>
+    function scrollToAbout() {
+      const aboutSection = document.getElementById("about");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
 </html>
