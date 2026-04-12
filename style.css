@@ -656,7 +656,7 @@ body.photography .navbar a:hover {
   color: #0d5f59;
 }
 body.photography .portfolio-page {
-  padding: 32px;
+  padding: 100px 32px 32px; /* top padding = navbar space */
 }
 body.photography .hero-section {
   display: grid;
@@ -868,6 +868,21 @@ body.photography .scrollable-gallery {
 @media (max-width: 500px) {
   body.photography .scrollable-gallery {
     column-count: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  body.photography main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.photography .booking-section {
+    order: 3;
+  }
+
+  body.photography .gallery-section {
+    order: 4;
   }
 }
 body.photography .scrollable-gallery img {
