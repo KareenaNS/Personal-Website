@@ -733,6 +733,54 @@ main {
   color: #251e54;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-meta {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: inherit;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+
+.project-links a:hover {
+  background-color: rgb(127 127 127 / 12%);
+}
+
+.project-links a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
 .about-card,
 .sample-card {
   background: white;
@@ -770,20 +818,72 @@ main {
 }
 
 #bottom {
+  padding: 40px 20px 24px;
   text-align: center;
-  padding: 60px 20px 30px;
 }
 
 .linksBottom {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 12px;
+}
+
+.linksBottom a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 180ms ease, transform 180ms ease;
 }
 
 .smslogos {
-  width: 48px;
-  height: 48px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.linksBottom a:hover {
+  background-color: rgb(127 127 127 / 12%);
+  transform: translateY(-2px);
+}
+
+.linksBottom a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .linksBottom a {
+    transition: none;
+  }
+
+  .linksBottom a:hover {
+    transform: none;
+  }
+}
+
+#bottom .footer-heading {
+  margin: 0 0 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+#bottom .custom-line {
+  width: min(100%, 320px);
+  margin: 24px auto 0;
+  border: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.15;
 }
 
 .custom-line {
